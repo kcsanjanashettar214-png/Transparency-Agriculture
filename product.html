@@ -1,0 +1,8 @@
+<h2>Blockchain Records</h2>
+
+{% for block in chain %}
+    <p>Index: {{ block.index }}</p>
+    <p>Data: {{ block.data }}</p>
+    <p>Hash: {{ block.hash }}</p>
+    <hr>
+{% endfor %}
